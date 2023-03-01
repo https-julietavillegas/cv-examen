@@ -1,0 +1,96 @@
+body {
+    background-color: white;
+    padding: 0rem 5rem 5rem 2rem;
+}
+
+p,
+h1,
+h2,
+h3 {
+    font-family: Lato, sans-serif;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+p {
+    color: black;
+    width: 300px;
+}
+
+h1 {
+    border: 1px;
+    margin: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 2px;
+    margin-right: 10px;
+    padding-top: 20px;
+    padding-left: 2px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+h2 {
+    color: brown;
+}
+
+h3 {
+    color: black
+}
+
+.layout {
+    width: 100%;
+
+    display: flex;
+    gap: 16px;
+}
+
+.caracteristicas {
+    padding: 3rem;
+    padding-top: 0rem;
+    background-color: rgba(108, 108, 108, 0.2);
+}
+
+.main {
+    flex-grow: 2;
+    padding: 3rem;
+    padding-top: 0rem;
+    background-color: beige;
+}
+.picture {
+    flex-grow: 1;
+}
+
+.picture img {
+    width: 150px;
+}
+
+.hide {
+    display: none;
+}

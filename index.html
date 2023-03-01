@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <section class="layout">
+        <div class="skills">
+            <h3>Cualidades</h3>
+            <ul>
+                <li>Responsable</li>
+                <li>Puntual</li>
+                <li>Dedicada</li>
+                <li>Persistente</li>
+                <li>Autoexijente</li>
+                <li>Honesta</li>
+                <li>Perfeccionista</li>
+                <li>paciente</li>
+
+            </ul>
+        </div>
+        <div class="main">
+            <h1> Ana Maria Gonzalez</h1>
+            <p>
+                <span class="material-icons">
+                    person_outline
+                    </span>
+                </span>
+                <strong> direccion:</strong> dean funes 368
+            </p>
+            <p><span class="material-icons">
+                phone
+                </span>
+                <strong> telefono:</strong> 3518124465
+            </p>
+            <p><span class="material-icons">
+                mail
+                </span>
+                <strong> correo:</strong> Anamaria@gmail.com
+            <p><span class="material-icons">
+                people
+                </span>
+                <strong>estado civil:</strong> soltera
+            </p>
+
+            <h2>Estudios y certificaciones</h2>
+            <h3>Secundaro completo</h3>
+            <p> Escuela General San Martin.</p>
+            <h3>Auxiliar de Farmacia </h3>
+            <p>Cruz Roja Argentina</p>
+            <h3>Secretariado Medico</h3>
+            <p>Cruz Roja Argentina</p>
+            <h3>Corte y Confeccion</h3>
+            <p>Escuela Profecional</p>
+            <h3>Teatro</h3>
+            <p>Universidad Provincial de Cordoba</p>
+
+            <h2>Experiencia Laboral</h2>
+            <h3 class="more" data-toggle="detail-1">Agencia de Motos/Secretaria</h3>
+            <p class="hide" id="detail-1">Reny Motos L.G.S.M</p>
+            <h3 class="more" data-toggle="detail-2">Promotora y Publicista</h3>
+            <p class="hide" id="detail-2">Maxin Viajes</p>
+
+            <h2>Disponibilidad Horaria</h2>
+            <p> Full Time</p>
+
+
+        </div>
+        <div class="picture">
+            <img src="https://randomuser.me/api/portraits/women/58.jpg" alt="imagen de una mujer" />
+        </div>
+    </section>
+    <div>
+
+    </div>
+    <script>
+        const els = document.querySelectorAll('.more');
+        function onDetailsClick(e) {
+            console.log(e.target.dataset.toggle)
+            document.getElementById(e.target.dataset.toggle).classList.remove('hide')
+        }
+
+        for (const el of els) {
+            el.addEventListener('click', onDetailsClick)
+        }
+        
+    </script>
+</body>
+
+</html>
